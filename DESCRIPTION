@@ -1,0 +1,36 @@
+Package: litirt
+Title: IRT-Based Proficiency Level Classification for Literacy and Large-Scale Assessments
+Version: 0.1.0
+Authors@R:
+    person("First", "Last",
+           email = "corresponding@email.com",
+           role = c("aut", "cre"))
+Description: Implements Item Response Theory (IRT)-based proficiency level 
+    classification for large-scale literacy and educational assessments. 
+    Given IRT theta estimates and user-defined cut scores, litirt classifies 
+    respondents into proficiency levels, computes classification accuracy 
+    and standard errors of classification, estimates misclassification 
+    probabilities, and produces Wright map visualizations with benchmark 
+    overlays. The package supports any number of proficiency levels and 
+    any IRT model supported by the mirt package. Built-in datasets include 
+    simulated data representative of PISA reading literacy and Indonesian 
+    AKM (Asesmen Kompetensi Minimum) literacy assessments, enabling 
+    immediate demonstration without user-supplied data. Functions are 
+    applicable to any assessment context using IRT-based proficiency 
+    classification, including educational, psychological, clinical, and 
+    organizational measurement.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports:
+    mirt (>= 1.40),
+    ggplot2 (>= 3.4.0),
+    methods
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/rmeasure/litirt
+BugReports: https://github.com/rmeasure/litirt/issues
